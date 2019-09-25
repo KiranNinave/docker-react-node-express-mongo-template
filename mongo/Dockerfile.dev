@@ -1,0 +1,10 @@
+FROM mongo
+
+RUN mongod --replSet techzilla_vod
+
+WORKDIR /app
+
+COPY . .
+
+
+
